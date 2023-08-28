@@ -1,0 +1,362 @@
+@import 'pe-icon-7-stroke.css';
+.container{
+    width: 100vw;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box1{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.box1 .circle1
+{
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+}
+.box1 .circle2
+{
+    width: 220px;
+    height: 220px;
+    border: 5px solid brown;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: translateX(10%) translateY(10%);
+    overflow: hidden;
+}
+.box1 .number
+{
+    width: 30px;
+    height: 30px;
+    border: 5px solid brown;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    transform: translateX(100%) translateY(100%);
+    background: white;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+    display: flex;
+}
+.box1 .content
+{
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    margin: 10px 0;
+}
+.box1 .circle2 img
+{
+    position: relative;
+    height: 230px;
+    object-fit: cover;
+    justify-items: center;
+    display: flex;
+    transform: translateX(-50%);
+    left: 50%;
+
+
+}
+.box1 .circle3
+{
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(65%)translateY(65%);
+}
+.box1 .circle4
+{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: #ccc;
+    position: absolute;
+    transform: translateX(1900%)translateY(1900%);
+
+}
+.box2{
+    width: 300px;
+    height: 300px;
+    
+    position: relative;
+    
+}
+.box2 .circle1
+{
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+}
+.box2 .circle2
+{
+    width: 220px;
+    height: 220px;
+    border: 5px solid brown;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: translateX(10%) translateY(10%);
+    overflow: hidden;
+}
+.box2 .number
+{
+    width: 30px;
+    height: 30px;
+    border: 5px solid brown;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    transform: translateX(100%) translateY(100%);
+    background: white;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+    display: flex;
+}
+.box2 .content
+{
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    margin: 10px 0;
+}
+.box2 .circle2 img
+{
+    position: relative;
+    height: 230px;
+    object-fit: cover;
+    justify-items: center;
+    display: flex;
+    transform: translateX(-50%);
+    left: 50%;
+
+
+}
+.box2 .circle3
+{
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(65%)translateY(65%);
+}
+.box2 .circle4
+{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: #ccc;
+    position: absolute;
+    transform: translateX(1900%)translateY(1900%);
+}
+.box3{
+    width: 300px;
+    height: 300px;
+    
+    position: relative;
+    
+}
+.box3 .circle1
+{
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+}
+.box3 .circle2
+{
+    width: 220px;
+    height: 220px;
+    border: 5px solid brown;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: translateX(10%) translateY(10%);
+    overflow: hidden;
+}
+.box3 .number
+{
+    width: 30px;
+    height: 30px;
+    border: 5px solid brown;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    transform: translateX(100%) translateY(100%);
+    background: white;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+    display: flex;
+}
+.box3 .content
+{
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    margin: 10px 0;
+}
+.box3 .circle2 img
+{
+    position: relative;
+    height: 230px;
+    object-fit: cover;
+    justify-items: center;
+    display: flex;
+    transform: translateX(-50%);
+    left: 50%;
+
+
+}
+.box3 .circle3
+{
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(65%)translateY(65%);
+}
+.box3 .circle4
+{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: #ccc;
+    position: absolute;
+    transform: translateX(1900%)translateY(1900%);
+
+}
+.box4{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.box4 .circle1
+{
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+}
+.box4 .circle2
+{
+    width: 220px;
+    height: 220px;
+    border: 5px solid brown;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: translateX(10%) translateY(10%);
+    overflow: hidden;
+}
+.box4 .number
+{
+    width: 30px;
+    height: 30px;
+    border: 5px solid brown;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    transform: translateX(100%) translateY(100%);
+    background: white;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+    display: flex;
+}
+.box4 .content
+{
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    margin: 10px 0;
+}
+.box4 .circle2 img
+{
+    position: relative;
+    height: 230px;
+    object-fit: cover;
+    justify-items: center;
+    display: flex;
+    transform: translateX(-50%);
+    left: 50%;
+
+}
+.box4 .circle3
+{
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(65%)translateY(65%);
+}
+.box4 .circle4
+{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: #ccc;
+    position: absolute;
+    transform: translateX(1900%)translateY(1900%);
+
+}
+.btn
+{
+    font-weight: bold;
+    display: flex;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    border: 2px solid orangered ;
+    padding: 5px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover
+{
+    opacity: 0.5;
+}
