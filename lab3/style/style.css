@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* .border
 {
     border: 1px solid;
@@ -6,6 +7,12 @@ a{
     text-decoration: none;
     color: rgb(170, 1, 1);
 }
+=======
+.border
+{
+    border: 1px solid;
+}
+>>>>>>> d436ad8553a31df06714448f38a78b46efd0c856
 section
 {
     background: #e3eded;
@@ -28,6 +35,7 @@ section
     position: relative;
     display: flex;
 }
+<<<<<<< HEAD
 
 .container .box1 .pic1
 {
@@ -47,10 +55,33 @@ section
 .container .box1 .pic2
 { 
     width: 250px;
+=======
+.container .box1 .pic1
+{
+    width: 450px;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container .box1 .pic1 img
+{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.container .box1 .pic1 .pic2
+{ 
+    width: 250px;
+    height: 150px;
+>>>>>>> d436ad8553a31df06714448f38a78b46efd0c856
     position: absolute;
     display: flex;
     bottom: 0;
     left: 50%;
+<<<<<<< HEAD
     transform: translateX(-50%);
     z-index: 1;   
     background: rgb(255,246,105);
@@ -135,6 +166,49 @@ section
     opacity: 1;
     transform: translateY(0);
     
+=======
+    transform: translateX(-50%) translateY(60%);
+    z-index: 1;   
+    background: rgb(255,246,105);
+    background: radial-gradient(circle, rgba(255,246,105,1) 0%, rgba(255,147,70,1) 100%);
+    transition: 1s;
+}
+.box1 .pic1 .pic2:hover
+{
+    transform: translateY(10%) translateX(-50%);
+}
+.container .box1 .pic1 .pic2 .content
+{
+    text-align: center;
+    font-size: 22px;
+    margin: 8px 5px;
+    list-style: none;
+    padding: 0;
+}
+.box1 .pic1 .pic2 .content .branch
+{
+    font-weight: bold;
+    color: red;
+    justify-items: center;
+}
+.box1 .pic1 .pic2 .content .branch::before
+{
+    content: '';
+    background: rgb(246, 246, 116);
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    border-radius: 12px;
+    transform: translateX(50%) translateY(-10%);
+    left: 15%;
+
+
+}
+.box1 .pic1 .pic2 .content .disc
+{
+    margin-top: 16px;
+>>>>>>> d436ad8553a31df06714448f38a78b46efd0c856
 }
 .container .box2 
 {
@@ -143,7 +217,11 @@ section
 }
 .container .box2 .pic1
 {
+<<<<<<< HEAD
     width: 500px;
+=======
+    width: 450px;
+>>>>>>> d436ad8553a31df06714448f38a78b46efd0c856
     height: 300px;
     position: relative;
     object-fit: cover;
@@ -152,7 +230,11 @@ section
 }
 .container .box2 .pic1 img
 {
+<<<<<<< HEAD
     width: 500px;
+=======
+    width: 450px;
+>>>>>>> d436ad8553a31df06714448f38a78b46efd0c856
     height: 300px;
     object-fit: cover;
     box-sizing: border-box;
@@ -214,7 +296,11 @@ section
 }
 .container .box3 .pic1
 {
+<<<<<<< HEAD
     width: 500px;
+=======
+    width: 450px;
+>>>>>>> d436ad8553a31df06714448f38a78b46efd0c856
     height: 300px;
     position: relative;
     object-fit: cover;
@@ -223,7 +309,11 @@ section
 }
 .container .box3 .pic1 img
 {
+<<<<<<< HEAD
     width: 500px;
+=======
+    width: 450px;
+>>>>>>> d436ad8553a31df06714448f38a78b46efd0c856
     height: 300px;
     object-fit: cover;
     box-sizing: border-box;
@@ -277,6 +367,7 @@ section
 .box3 .pic1 .pic2 .content .disc
 {
     margin-top: 16px;
+<<<<<<< HEAD
 } */
 
 .border{
@@ -382,4 +473,6 @@ section
     visibility: visible;
     height: auto;
     opacity: 1;
+=======
+>>>>>>> d436ad8553a31df06714448f38a78b46efd0c856
 }
