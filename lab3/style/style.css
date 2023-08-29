@@ -1,0 +1,234 @@
+.border
+{
+    border: 1px solid;
+}
+section
+{
+    background: #e3eded;
+    position: relative;
+    padding: 20px 0;
+    width: 100vw;
+    font-family: Montserrat;
+}
+.container
+{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    position: relative;
+    
+}
+.container .box1 
+{
+    position: relative;
+    display: flex;
+}
+.container .box1 .pic1
+{
+    width: 450px;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container .box1 .pic1 img
+{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.container .box1 .pic1 .pic2
+{ 
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(60%);
+    z-index: 1;   
+    background: rgb(255,246,105);
+    background: radial-gradient(circle, rgba(255,246,105,1) 0%, rgba(255,147,70,1) 100%);
+    transition: 1s;
+}
+.box1 .pic1 .pic2:hover
+{
+    transform: translateY(10%) translateX(-50%);
+}
+.container .box1 .pic1 .pic2 .content
+{
+    text-align: center;
+    font-size: 22px;
+    margin: 8px 5px;
+    list-style: none;
+    padding: 0;
+}
+.box1 .pic1 .pic2 .content .branch
+{
+    font-weight: bold;
+    color: red;
+    justify-items: center;
+}
+.box1 .pic1 .pic2 .content .branch::before
+{
+    content: '';
+    background: rgb(246, 246, 116);
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    border-radius: 12px;
+    transform: translateX(50%) translateY(-10%);
+    left: 15%;
+
+
+}
+.box1 .pic1 .pic2 .content .disc
+{
+    margin-top: 16px;
+}
+.container .box2 
+{
+    position: relative;
+    display: flex;
+}
+.container .box2 .pic1
+{
+    width: 450px;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container .box2 .pic1 img
+{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.container .box2 .pic1 .pic2
+{ 
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(60%);
+    z-index: 1;   
+    background: rgb(255,246,105);
+    background: radial-gradient(circle, rgba(255,246,105,1) 0%, rgba(255,147,70,1) 100%);
+    transition: 1s;
+}
+.box2 .pic1 .pic2:hover
+{
+    transform: translateY(10%) translateX(-50%);
+}
+.container .box2 .pic1 .pic2 .content
+{
+    text-align: center;
+    font-size: 22px;
+    margin: 8px 5px;
+    list-style: none;
+    padding: 0;
+}
+.box2 .pic1 .pic2 .content .branch
+{
+    font-weight: bold;
+    color: red;
+    justify-items: center;
+}
+.box2 .pic1 .pic2 .content .branch::before
+{
+    content: '';
+    background: rgb(246, 246, 116);
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    border-radius: 12px;
+    transform: translateX(-50%) translateY(-10%);
+    left: 15%;
+
+
+}
+.box2 .pic1 .pic2 .content .disc
+{
+    margin-top: 16px;
+}
+.container .box3 
+{
+    position: relative;
+    display: flex;
+}
+.container .box3 .pic1
+{
+    width: 450px;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container .box3 .pic1 img
+{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.container .box3 .pic1 .pic2
+{ 
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(60%);
+    z-index: 1;   
+    background: rgb(255,246,105);
+    background: radial-gradient(circle, rgba(255,246,105,1) 0%, rgba(255,147,70,1) 100%);
+    transition: 1s;
+}
+.box3 .pic1 .pic2:hover
+{
+    transform: translateY(10%) translateX(-50%);
+}
+.container .box3 .pic1 .pic2 .content
+{
+    text-align: center;
+    font-size: 22px;
+    margin: 8px 5px;
+    list-style: none;
+    padding: 0;
+}
+.box3 .pic1 .pic2 .content .branch
+{
+    font-weight: bold;
+    color: red;
+    justify-items: center;
+}
+.box3 .pic1 .pic2 .content .branch::before
+{
+    content: '';
+    background: rgb(246, 246, 116);
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    border-radius: 12px;
+    transform: translateX(-60%) translateY(-10%);
+    left: 15%;
+
+
+}
+.box3 .pic1 .pic2 .content .disc
+{
+    margin-top: 16px;
+}
