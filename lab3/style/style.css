@@ -1,0 +1,384 @@
+/* .border
+{
+    border: 1px solid;
+}
+a{
+    text-decoration: none;
+    color: rgb(170, 1, 1);
+}
+section
+{
+    background: #e3eded;
+    position: relative;
+    padding: 20px 0;
+    width: 100vw;
+    font-family: Montserrat;
+}
+.container
+{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    position: relative;
+    
+}
+.container .box1 
+{
+    position: relative;
+    display: flex;
+}
+
+.container .box1 .pic1
+{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.container .box1 .pic1 img
+{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+.container .box1 .pic2
+{ 
+    width: 250px;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;   
+    background: rgb(255,246,105);
+    background: radial-gradient(circle, rgb(253, 246, 149) 0%, rgb(251, 173, 117) 100%);
+}
+
+.container .box1 .pic2 .content
+{
+    text-align: center;
+    font-size: 22px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.box1 .pic2 .content .branch
+{
+    font-weight:500;
+    color: rgb(195, 2, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px ;
+    margin-bottom: 10px;
+}
+.box1 .pic2 .logo
+{
+    width: 35px;
+    height: 35px;
+    background: rgb(254, 254, 193);
+    border-radius: 50%;
+    margin-right: 15px;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+.box1 .pic2 .logo img
+{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.pic2 .content .branch p
+{
+    margin: 5px 0;
+}
+.box1 .pic2 .content .date
+{
+    font-size: 15px;
+    margin-top: 3px ;
+    color: rgb(72, 72, 251);
+}
+.box1 .pic2 .content{
+    overflow: hidden;
+    height: 100px;
+    transition: all 0.3 ease-in-out;
+}
+.box1 .pic2 .content .disc
+{
+    margin-top: 8px;
+    padding: 2px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    visibility: hidden;
+    opacity: 0;
+    
+
+}.container .box1:hover .pic2 .content{
+    height: 50%;
+}
+.container .box1:hover .pic2 .content .disc
+{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    
+}
+.container .box2 
+{
+    position: relative;
+    display: flex;
+}
+.container .box2 .pic1
+{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container .box2 .pic1 img
+{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.container .box2 .pic1 .pic2
+{ 
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(60%);
+    z-index: 1;   
+    background: rgb(255,246,105);
+    background: radial-gradient(circle, rgba(255,246,105,1) 0%, rgba(255,147,70,1) 100%);
+    transition: 1s;
+}
+.box2 .pic1 .pic2:hover
+{
+    transform: translateY(10%) translateX(-50%);
+}
+.container .box2 .pic1 .pic2 .content
+{
+    text-align: center;
+    font-size: 22px;
+    margin: 8px 5px;
+    list-style: none;
+    padding: 0;
+}
+.box2 .pic1 .pic2 .content .branch
+{
+    font-weight: bold;
+    color: red;
+    justify-items: center;
+}
+.box2 .pic1 .pic2 .content .branch::before
+{
+    content: '';
+    background: rgb(246, 246, 116);
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    border-radius: 12px;
+    transform: translateX(-50%) translateY(-10%);
+    left: 15%;
+
+
+}
+.box2 .pic1 .pic2 .content .disc
+{
+    margin-top: 16px;
+}
+.container .box3 
+{
+    position: relative;
+    display: flex;
+}
+.container .box3 .pic1
+{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container .box3 .pic1 img
+{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.container .box3 .pic1 .pic2
+{ 
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(60%);
+    z-index: 1;   
+    background: rgb(255,246,105);
+    background: radial-gradient(circle, rgba(255,246,105,1) 0%, rgba(255,147,70,1) 100%);
+    transition: 1s;
+}
+.box3 .pic1 .pic2:hover
+{
+    transform: translateY(10%) translateX(-50%);
+}
+.container .box3 .pic1 .pic2 .content
+{
+    text-align: center;
+    font-size: 22px;
+    margin: 8px 5px;
+    list-style: none;
+    padding: 0;
+}
+.box3 .pic1 .pic2 .content .branch
+{
+    font-weight: bold;
+    color: red;
+    justify-items: center;
+}
+.box3 .pic1 .pic2 .content .branch::before
+{
+    content: '';
+    background: rgb(246, 246, 116);
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    border-radius: 12px;
+    transform: translateX(-60%) translateY(-10%);
+    left: 15%;
+
+
+}
+.box3 .pic1 .pic2 .content .disc
+{
+    margin-top: 16px;
+} */
+
+.border{
+    border: 1px solid;
+}
+section
+{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    width: 100vw;
+    font-family: Montserrat;
+}
+.newspapers
+{
+    position: relative;
+    width:500px ;
+    justify-items: center;
+    overflow: hidden;
+    
+}.newspapers .img{
+    width: 100%;
+    margin-bottom: 50px ;
+}
+.newspapers .img img
+{
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+
+}
+.newspapers .footer
+{
+    width: 70%;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(255,246,105);
+    background: radial-gradient(circle, rgba(255,246,105,1) 0%, rgba(255,147,70,1) 100%);
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+
+}
+.newspapers .footer .title
+{   
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.newspapers .footer .title .logo
+{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background: rgb(255, 255, 177);
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+}
+.newspapers .footer .title .logo img
+{   
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top:50%;
+    width: 25px;
+    height: 25px;
+}
+.newspapers .footer .title span
+{
+    color: rgb(185, 0, 0);
+    font-weight: 700;
+    font-size: 25px;
+}
+.newspapers .footer .date
+{
+    color: blue;
+    font-weight: 300;
+}
+.newspapers .footer a
+{
+    color: rgb(185, 0, 0);
+    font-weight: 600;
+    font-size: 20px;
+    margin: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    visibility: hidden;
+    height: 0;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+.newspapers:hover .footer a
+{
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+}
