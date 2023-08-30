@@ -1,0 +1,95 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+body{
+    background-color: #ededed;
+    display: flex;
+    font-family: 'Helvetica Neue', sans-serif;
+    position: relative;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+body > div{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    display: inline-block;
+    margin: auto;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 12px 38px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    min-width: 120px;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn + .btn{
+    margin-left: 16px;
+}
+.btn--success 
+{
+    background-color: #71be34;
+}
+.btn--warn
+{
+    background-color: #ffb703;
+}
+.btn--danger
+{
+    background-color: #fe623d;
+}
+
+/* Toast */
+.toast
+{   
+    display:inline-flex;
+    position: relative;
+    margin: 12px 0;
+    background: #fff;
+    border-radius: 2px;
+    border-left: 4px solid #47d764;
+    box-shadow: 0 5px 8px rgb(0, 0, 0, 0.08);
+    padding: 10px 0;
+    align-items: center;
+
+}
+.toast__icon{
+    margin-left: 15px;
+    font-size: 24px;
+    color: #47d764;
+}
+.toast__body{
+}
+.toast__title{
+    margin: 5px 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.toast__msg{
+    margin: 5px 15px ;
+    font-size: 14px;
+    font-weight: 300;
+}
+.toast__close{
+    font-size: 24px;
+    margin: 0 15px;
+    color: #bfc0c3;
+}
+.toast--warn .toast__icon{
+    color: #ffc021;
+}
+
+.toast--info .toast__icon{
+    color: #2f86eb;
+}
+.toast--info{
+    border-color: #2f86eb;
+}
+.toast--warn{
+    border-color: #ffc021;
+}
