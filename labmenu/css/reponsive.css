@@ -1,0 +1,166 @@
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+    .container{
+        width: 100%;
+    }
+    .headers__top{
+        height: auto;
+    }
+    .header__social
+    {
+        display: none;
+    }
+    .headers__top .headers__last .icon
+    {
+        display: none;
+    }
+    .headers__middle
+    {
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        padding: 8px 0;
+
+    }
+    .headers__middle .hot
+    {
+        padding: 5px 12px;
+        font-size: 12px;
+        border-radius: 15px;
+    }
+    .headers__middle .wave
+    {
+        width: 20px;
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+    }
+    .headers__middle .text
+    {
+        font-weight: 600;
+    }
+    .headers__middle p
+    {
+        margin: 0;
+    }
+    .headers__top .styleheadertop
+    {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: inherit;
+
+    }
+    .headers__last
+    {
+        margin-left: 0 ;
+        overflow: hidden;
+        height: 0;
+        opacity: 0;
+        transition: 0.3s linear;
+        align-items: center;
+        justify-items: center;
+    }
+    .headers__last.active
+    {
+        height: auto; opacity: 1;
+        
+    }
+    .headers__last .cur
+    {
+        margin: 0;
+    }
+    .headers__last .lag span
+    {
+        font-size: 11px;
+    }
+    .headers__last .lag img
+    {
+        width: 20px;
+    }
+    .headers__last .cur span
+    {
+        font-size: 11px;
+    }
+    .toggle
+    {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        color: #fff;
+        font-size: 24px;
+        right: 0px;
+    }
+    .toggle::before
+    {
+        content: "\f0415";
+        font-family: "Material Design Icons";
+        color: #fff;
+        cursor: pointer;
+        
+    }
+    .toggle.active::before
+    {
+        content: "\f0374";
+        font-family: "Material Design Icons";
+        color: #fff;
+    }
+    .header__first {
+        height: auto;
+    }
+    .header__first .category span {
+        display: none;
+    }
+    .header__first .category 
+    {
+        background: none;
+        margin: 0 15px;
+        padding: 0;
+        width: auto;
+    }
+    .header__first .category div
+    {
+        display: none;
+    }
+    .header__first .logo 
+    {
+        width: 200px;
+        margin-right: 0;
+    }
+    .header__mid
+    {
+        display: none;
+    }
+    .header .header__last div span
+    {
+        border: none;
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    .border.header__last div
+    {
+        border: none;
+        padding: 0 2px;
+    }
+    .border.header__last .roll
+    {
+        display: none;
+    }
+    .border.header__last .btnmenu
+    {
+        width: 25px;
+        height: 25px;
+        color: #fff;
+        font-size: 22px;
+        right: 0px;
+        margin-right: 25px;
+    }
+    .btnmenu::before
+    {
+        content: "\F035C";
+        font-family: "Material Design Icons";
+        color: var(--tx1);
+        
+    }
+   
+}

@@ -4,10 +4,12 @@
 <head>
     <title>BrancherX</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/icons.min.css">
+    <link rel="stylesheet" href="css/reponsive.css">
 </head>
 
 <body>
@@ -33,9 +35,10 @@
                     <div class="border headers__middle">
                         <div class="hot">Hot</div>
                         <div class="wave"><img src="img/hand-emojji.svg" alt=""></div>
-                        <p>Intro price. Get BrancherX for Big Sale -95% off</p>
+                        <p class="text">Intro price. Get BrancherX for Big Sale -95% off</p>
+                        <div class="toggle" onclick="toggleheader();"></div>
                     </div>
-                    <div class="border header__last">
+                    <div class="border headers__last">
                         <div class="icon">
                             <i class=" ri-facebook-fill"></i>
                             <i class=" ri-twitter-fill"></i>
@@ -51,6 +54,7 @@
                             <span>USD</span>
                             <i class="ri-arrow-down-s-line"></i>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -69,36 +73,85 @@
                     </div>
                 </div>
                 <div class="border header__mid">
-                    <div class="menu">
-                        <div>Home
-                            <i class="ri-arrow-down-s-line"></i>
-                        </div>
-                        <div>Courses
-                            <i class="ri-arrow-down-s-line"></i>
-                        </div>
-                        <div>Dashboard
-                            <i class="ri-arrow-down-s-line"></i>
-                        </div>
-                        <div>Pages
-                            <i class="ri-arrow-down-s-line"></i>
-                        </div>
-                        <div>Elements
-                            <i class="ri-arrow-down-s-line"></i>
-                        </div>
-                        <div>Blog
-                            <i class="ri-arrow-down-s-line"></i>
-                        </div>
-                    </div>
+                    <nav class="mainmenu-nav">
+                        <ul class="mainmenu">
+                            <li class="has-menu-child-item">
+                                <a href="#">
+                                    Home 
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </a>
+                            </li>
+                            <li class="has-menu-child-item">
+                                <a href="#">
+                                    Courses 
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </a>
+                            </li>
+                            <li class="has-menu-child-item">
+                                <a href="#">
+                                    Dashboard 
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </a>
+                                <ul class="submenu">
+                                    <li class="has-dropdown">
+                                        <a href="#">Instructor Dashboard</a>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="#">Student Dashboard</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-menu-child-item">
+                                <a href="#">
+                                    Pages 
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </a>
+                            </li>
+                            <li class="has-menu-child-item">
+                                <a href="#">
+                                    Elements 
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </a>
+                            </li>
+                            <li class="has-menu-child-item">
+                                <a href="#">
+                                    Blog 
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
+                <!-- Header Last -->
                 <div class="border header__last">
                     <div class="ri-search-line"></div>
                     <div class="ri-shopping-cart-2-line"></div>
-                    <div class=" ri-user-3-line"></div>
+                    <div class=" ri-user-3-line">
+                        <span>Admin</span>
+                        </div>
                     <div class="roll"></div>
+                    <div class="btnmenu"></div>
                 </div>
             </div>
         </div>
     </header>
+    <div class="popup-mobile-menu">
+        <div class="inner-wrapper">
+            <div class="content">
+                <div class="logo"><img src="https://brancherx.com/wp-content/uploads/2022/07/brancherx-logo.svg" alt=""></div>
+                <div class="btn-close"><i class="ri-close-line"></i></div>
+            </div>
+        </div>
+        <div class="blur"></div>
+    </div>
+    <script>
+        function toggleheader(){
+            var menuToggle = document.querySelector('.toggle');
+            menuToggle.classList.toggle('active')
+            var headerlasttoggle = document.querySelector('.headers__last');
+            headerlasttoggle.classList.toggle('active')
+        }
+    </script>
 </body>
 
 </html>
