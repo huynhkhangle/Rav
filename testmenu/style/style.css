@@ -1,0 +1,184 @@
+body{
+    display: flex;
+    position: relative;
+}
+.menus-mobile{
+    display: flex;
+    position: relative;
+    width: 0;
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s linear;
+
+}
+.menus-mobile.active{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    width: 500px;
+    height: auto;
+    background: orange;
+    font-size: 18px;
+    z-index: 10;
+    position: relative;
+    margin: 20px;
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.btn-close{
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    top: 15px;
+    right: 20px ;
+    position: absolute;
+}
+.top-menu{
+    display: flex;
+    position: relative;
+    
+}
+.overlay{
+    width: 40%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    display: flex;
+    content: '';
+}
+.btn-open{
+    font-size: 50px;
+    color: black;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 20px;
+}
+.decription{
+    font-size: 15px;
+    text-align: center;
+}
+.main-mobile-menu{
+    font-size: 20px;
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.child-menu1{
+    padding-left: 15px;
+}
+.accordion{
+    background-color: #eee;
+    color: #444;
+    width: 100%;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.active, .accordion:hover{
+    background-color: #ccc;
+}
+.panel{
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.inner-wrapper .content{
+    margin: 20px 5px 10px 5px;
+}
+.inner-wrapper .contact{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.inner-wrapper .contact div{
+    display: flex;
+    align-items: center;
+}
+.inner-wrapper .contact div span{
+    margin-left: 3px;
+}
+.inner-wrapper .decription{
+    font-size: 12px;
+    margin: 15px 5px;
+}
+.inner-wrapper .contact{
+    font-size: 10px;
+    margin: 5px 5px ;
+}
+.main-mobile-menu{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10px;
+    color: var(--tx1);
+}
+.main-mobile-menu .accordion.mobile-menu1{
+    padding-top: 27px;
+}
+.main-mobile-menu .accordion{
+    margin: 0 0 0 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 0px 4px 2px;
+    border-top: 1px solid rgb(211, 211, 211, 0.8);
+    transition: all 0.5s;
+}
+.accordion:hover > * {
+   color: blue;
+}
+.accordion:hover .close-btn::before{
+   color: blue;
+}
+.close-btn::before{
+    display: block;
+    content: '\F0415';
+    width: 15px;
+    color: black;
+    font-family: "Material Design Icons";
+    margin: 2px;
+    font-size: 15px;
+}
+.close-btn.active::before{
+    display: block;
+    content: '\F0374';
+    width: 15px;
+    color: black;
+    font-family: "Material Design Icons";
+    margin: 2px;
+    font-size: 15px;
+}
+.main-mobile-menu .panel{
+    overflow: hidden;
+    display: none;
+    height: 0%;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+    visibility: hidden;
+}
+.main-mobile-menu .panel.active {
+    height: 100%;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
+.main-mobile-menu .panel li{
+    margin: 0 15px;
+}

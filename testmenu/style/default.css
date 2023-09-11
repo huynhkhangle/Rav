@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif,arial;
+}
+
+:root {
+    --red: #950505;
+    --black: #373737;
+    --tx1: #595959;
+	--yellow:#F6D167;
+	--yellow1:#FFF7AE;
+	--yellow2:#faf5e1;
+	--yellow3:#FFB830;
+	--teal:#297F87;
+	--white1:#cfd4df;
+	--white:#FFEDDA;
+	--blue:#3DB2FF;
+}
+
+body {
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+.border {
+    border: 1px solid var(--black);
+}
+
+textarea:focus,
+input:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ddd1b9;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ddd1b9;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #ddd1b9;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,button{
+	color:inherit;
+	line-height:inherit;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+    line-height: 1.2;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+ul{
+	list-style: outside none none;
+	margin:0;
+	padding:0;
+}
+p:last-child{
+	margin-bottom:0;
+}
