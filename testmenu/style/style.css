@@ -77,7 +77,7 @@ body{
 .child-menu1{
     padding-left: 15px;
 }
-.accordion{
+.mobile{
     background-color: #eee;
     color: #444;
     width: 100%;
@@ -130,7 +130,7 @@ body{
 .main-mobile-menu .accordion.mobile-menu1{
     padding-top: 27px;
 }
-.main-mobile-menu .accordion{
+.main-mobile-menu .mobile{
     margin: 0 0 0 5px;
     display: flex;
     justify-content: space-between;

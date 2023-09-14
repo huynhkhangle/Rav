@@ -18,6 +18,8 @@
 	--white1:#cfd4df;
 	--white:#FFEDDA;
 	--blue:#3DB2FF;
+    --blue-hover:#2f57ef;
+    --gray-hover-bg:rgb(200, 200, 200, 0.4);
 }
 
 body {
