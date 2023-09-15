@@ -172,12 +172,12 @@ body{
     transition: all 0.4s ease-out;
     visibility: hidden;
 }
-.main-mobile-menu .panel.active {
-    height: 100%;
+.accordion.active .panel{
+    overflow: hidden;
     display: block;
+    height: 100%;
     opacity: 1;
     visibility: visible;
-    overflow: hidden;
 }
 .main-mobile-menu .panel li{
     margin: 0 15px;

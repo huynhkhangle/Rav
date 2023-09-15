@@ -19,7 +19,7 @@
             </div>
             <p class="decription"> Decription</p>
             <ul class="main-mobile-menu">
-                <li class="accordion">
+                <li class="accordion active">
                     <a href="#" class="mobile mobile-menu1">
                         <span>Home</span>
                         <div class="close-btn"></div>
@@ -116,6 +116,7 @@
                     </ul>
                 </li>
                 
+                
             </ul>
             </div>
         </div>
@@ -137,29 +138,46 @@
     });
 
     // Menu Accordion
-    var acc = document.getElementsByClassName("accordion");
-        var i;
+    // var acc = document.getElementsByClassName("accordion");
+    //     var i;
 
-        document.querySelectorAll('.accordion').forEach( function(list) {
-                list.addEventListener("click", function() {
-                const flag = this.classList.contains('active');
-                const panel = this.querySelector('.panel');
-                this.parentElement.querySelectorAll('.panel.active, .accordion.active').forEach( function(item) {
-                    item.classList.remove('active');
+    //     document.querySelectorAll('.accordion').forEach( function(list) {
+    //             list.addEventListener("click", function() {
+    //             const flag = this.classList.contains('active');
+    //             const panel = this.querySelector('.panel');
+    //             this.parentElement.querySelectorAll('.panel.active, .accordion.active').forEach( function(item) {
+    //                 item.classList.remove('active');
+    //             });
+
+    //             if (flag) {
+    //                 this.classList.remove("active");
+    //                 panel.classList.remove('active');
+    //             } else {
+    //                 this.classList.add("active");
+    //                 panel.classList.add('active');
+    //             };
+    //         })})
+    var list = document.querySelectorAll('.mobile');
+        console.log(list);
+        list.forEach(function(item) {
+            item.addEventListener("click", function(evt1) {
+                
+                var flag = evt1.currentTarget.parentElement.classList.contains('active');
+
+                var a = document.querySelectorAll(' .accordion');
+                var b = evt1.currentTarget.parentElement.parentElement.querySelectorAll('.accordion');
+
+                if(flag) {
+                    evt1.currentTarget.parentElement.classList.remove('active');
+                } else{
+                    evt1.currentTarget.parentElement.parentElement.querySelectorAll('.accordion').forEach(function(re) {
+                    re.classList.remove('active');
                 });
+                    evt1.currentTarget.parentElement.classList.add('active');
+                }
+            })
+        });
 
-                if (flag) {
-                    this.classList.remove("active");
-                    panel.classList.remove('active');
-                } else {
-                    this.classList.add("active");
-                    panel.classList.add('active');
-                };
-            })})
-            
-        // this.parentElement.querySelectorAll('.accordion.active').forEach(function(item) {
-                //     item.classList.toggle('active')
-               
 </script>
 
 

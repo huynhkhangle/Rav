@@ -1,4 +1,5 @@
 header{
+    width: 100%;
     position: relative;
     align-items: center;
     justify-items: center;
@@ -11,6 +12,16 @@ img {
     vertical-align: middle;
     max-width: 100%;
     height: auto;
+}
+.all-header-bot{
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+
 }
 .headers__top
 {   
@@ -548,6 +559,7 @@ img {
 .bot-elements:hover span{
     transition-delay: 0.1s;
     transform: translateX(23px);
+    color: white;
 }
 .bot-elements .wrap-icon {
     display: inline-block;
@@ -576,6 +588,7 @@ img {
     opacity: 1;
     transform: translateX(0);
     transition-delay: 0.225s;
+    color: white;
 }
 /* Mid header menu - Blog */
 .blog-dropdown{
@@ -692,7 +705,13 @@ img {
     border-right: 1px solid rgb(179, 179, 179);
     padding-right: 15px;
 }
-
+.accordion.active .panel{
+    overflow: hidden;
+    display: block;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
 .main-mobile-menu a
 {
     display: flex;
@@ -755,4 +774,138 @@ img {
     display: block;
     text-align: center;
     
+}
+/* Main - Wrapper */
+.main-wrapper{
+    width: 100%;
+}
+.banner-area{
+    background-color: var(--white1);
+    padding: 0 150px;
+    position: relative;
+    overflow: hidden;
+    background: url(https://rainbowit.net/html/histudy/assets/images/bg/bg-g1.webp);
+    height: auto;
+    background-position: top center;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new-badge{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    width: fit-content;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.new-badge span{
+    font-size: 15px;
+    padding: 2px;
+    margin-right: 5px;
+    color: rgb(255, 255, 0);
+}
+.new-badge h3{
+    font-size: 14px;
+    z-index: 9;
+}
+.new-badge::before{
+    content: '';
+    display: flex;
+    position: absolute;
+    background: rgb(255, 255, 255, 0.5);
+    clip-path: polygon(100% 0, 97% 50%, 100% 100%, 0 100%, 3% 50%, 0 0);
+    height: 35px;
+    left: -20px;
+    right: -20px;
+    width: calc(100% + 40%px);
+}
+
+.inner h1{
+    font-size: 40px;
+    margin: 30px 0;
+}
+.inner p{
+    color: var(--tx1);
+    font-size: 15px;
+    padding-right: 20%;
+    margin-bottom: 40px;
+}
+.slider-btn{
+    width: fit-content;
+    padding: 10px 20px;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, rgba(65,91,255,1), rgba(234,112,255,1), rgba(234,112,255,1), rgba(65,91,255,1));
+    border-radius: 10px;
+    font-weight: 500;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.4s ease-in-out;
+}
+.slider-btn:hover{
+    background-color: inherit;
+    background-position: 102% 0;
+    transition: all 0.4s ease-in-out;
+}
+.warp-course{
+    display: flex;
+    font-size: 16px;
+    color: white;
+}
+.warp-course i{
+    padding-left: 6px;
+    display: inline-block;
+    top: 0px;
+    position: relative;
+    font-size: 17px;
+    margin-left: 20px;
+}
+.warp-course span{
+    display: inline-block;
+    transition: transform 0.6s 0.125s cubic-bezier(0.1, 0.75, 0.25, 1);
+    margin-inline-start: -23px;
+}
+.slider-btn:hover span{
+    transition-delay: 0.1s;
+    transform: translateX(23px);
+    color: white;
+}
+.slider-btn .wrap-icon {
+    display: inline-block;
+    transition: opacity 0.4s 0.25s, transform 0.6s 0.25s;
+    transition-timing-function: ease-out;
+}
+.slider-btn:hover .wrap-icon{
+    opacity: 0;
+    transition-delay: 0s;
+    transform: translateX(10px);
+}
+.slider-btn .wrap-icon + .wrap-icon {
+    order: -2;
+    display: inline-block;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition-delay: 0s;
+}
+.slider-btn .wrap-icon + .wrap-icon i{
+    padding-right: 0;
+    padding-right: 5px;
+}
+.slider-btn:hover .wrap-icon + .wrap-icon {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.225s;
+    color: white;
+}
+.shape-warpper img{
+    max-width: 534px;
 }
