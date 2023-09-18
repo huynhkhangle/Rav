@@ -592,6 +592,49 @@
         border-top: 1px solid var(--gray-hover-bg);
         padding: 0;
     }
+  /* Main Wrapper */
+     .banner-area{
+        margin-top: 30px;
+    }
+    .banner-area-1 {
+        padding: 0 30px;
+    }
+    .banner-area-1 .content{
+        display: block;
+    }
+    .shape-warpper img{
+        border: 0;
+        vertical-align: middle;
+    }
+    .banner-area-1 .content .shape-warpper{
+        display: none;
+    }
+    .slide-card{
+        position: relative;
+        max-width: 290px;
+        margin: 40px 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .slide-card .card-slide{
+        padding: 20px;
+        max-width: 290px;
+    }
+    .inner p{
+        font-size: 22px;
+        margin-bottom: 40px;
+        font-weight: 400;
+        padding-right: 24px;
+
+    }
+    .inner h1 {
+        font-size: 42px;
+    }
+    .banner-area::after {
+        height: 120px;
+    }
+
+      
 }
 /* 576px -> 767px */
 @media (min-width: 576px) and (max-width: 767px)
@@ -1183,6 +1226,48 @@
         border-top: 1px solid var(--gray-hover-bg);
         padding: 0;
     }
+    /* Main Wrapper */
+    .banner-area{
+        margin-top: 30px;
+    }
+    .banner-area-1 {
+        padding: 0 30px;
+    }
+    .banner-area-1 .content{
+        display: block;
+    }
+    .shape-warpper img{
+        border: 0;
+        vertical-align: middle;
+    }
+    .banner-area-1 .content .shape-warpper{
+        display: none;
+    }
+    .slide-card{
+        position: relative;
+        max-width: 290px;
+        margin: 40px 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .slide-card .card-slide{
+        padding: 20px;
+        max-width: 290px;
+    }
+    .inner p{
+        font-size: 22px;
+        margin-bottom: 40px;
+        font-weight: 400;
+        padding-right: 24px;
+
+    }
+    .inner h1 {
+        font-size: 42px;
+    }
+    .banner-area::after {
+        height: 120px;
+    }
+    
 }
 
 
@@ -1774,6 +1859,52 @@
         margin:0px 5px;
         border-top: 1px solid var(--gray-hover-bg);
         padding: 0;
+    }
+    /* Main Wrapper */
+    .banner-area-1 {
+        padding: 0 60px;
+    }
+    .banner-area-1 .content{
+        display: block;
+    }
+    .shape-warpper img{
+        border: 0;
+        vertical-align: middle;
+    }
+    .banner-area-1 .content .shape-warpper{
+        margin-top: 20px;
+        z-index: 2;
+        margin-bottom: 6px;
+        position: relative;
+        display: flex;
+        margin-left: 20px;
+    }
+    .content .shape-warpper img{
+        max-width: 450px;
+    }
+    .slide-card{
+        position: absolute;
+        max-width: 290px;
+        bottom: 12%;
+        right: 7%;
+        z-index: 2;
+    }
+    .slide-card .card-slide{
+        padding: 20px;
+        max-width: 290px;
+    }
+    .inner p{
+        font-size: 22px;
+        margin-bottom: 40px;
+        font-weight: 400;
+        padding-right: 24px;
+
+    }
+    .inner h1 {
+        font-size: 42px;
+    }
+    .banner-area::after {
+        height: 130px;
     }
 }
 
@@ -2368,12 +2499,50 @@
         border-top: 1px solid var(--gray-hover-bg);
         padding: 0;
     }
+    /* Main Wrapper */
+    .banner-area-1 {
+        padding: 0 30px;
+    }
+    .banner-area-1 .content{
+        display: block;
+    }
+    .shape-warpper img{
+        border: 0;
+        vertical-align: middle;
+    }
+    .banner-area-1 .content .shape-warpper{
+        margin-top: 20px;
+        z-index: 2;
+        margin-bottom: 6px;
+        position: relative;
+        display: flex;
+        margin-left: 20px;
+    }
+    .slide-card{
+        position: absolute;
+        max-width: 350px;
+        bottom: 12%;
+        right: 7%;
+        z-index: 2;
+    }
+    .inner p{
+        font-size: 22px;
+        margin-bottom: 40px;
+        font-weight: 400;
+
+    }
+    .inner h1 {
+        font-size: 54px;
+    }
+    .banner-area::after {
+        height: 130px;
+    }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .container {
-        width: 80%;
-        max-width: 1320px;
+        width: 90%;
+        max-width: 1140px;
     }
 
     .headers__top {
@@ -2742,12 +2911,21 @@
     .main-mobile-menu .panel>li:first-child{
         border-top: none;
     }
+    
    
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1400px){
+    .container {
+        width: 95%;
+        max-width: 1320px;
+    }
     .popup-mobile-menu{
         display: none;
     }
-}
+        
+    }    
+    .banner-area-1{
+        padding: 0 50px;
+    }       
     

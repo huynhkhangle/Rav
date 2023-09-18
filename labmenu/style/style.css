@@ -38,9 +38,9 @@ img {
     align-items: center;
 }
 .container{
-    width: 80%;
+    width: 90%;
     height: 100%;
-    margin: 0;
+    margin: 0 auto;
 }
 .styleheadertop{
     width: 100%;
@@ -732,6 +732,7 @@ img {
 {
     margin-left: 20px;
 }
+
 .inner-wrapper .roll{
     font-size: 12px;
     width: 100%;
@@ -777,16 +778,35 @@ img {
 }
 /* Main - Wrapper */
 .main-wrapper{
-    width: 100%;
+    width: 100vw;
 }
 .banner-area{
     background-color: var(--white1);
-    padding: 0 150px;
+    padding: 0;
     position: relative;
     overflow: hidden;
     background: url(https://rainbowit.net/html/histudy/assets/images/bg/bg-g1.webp);
     height: auto;
     background-position: top center;
+    padding-top: 50px;
+    
+}
+.banner-area::after{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background: url(https://rainbowit.net/html/histudy/assets/images/bg/banner-bg-shape-1.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 145px;
+    z-index: 9;
+}
+.banner-area-1{
+    width: 100%;
+    padding-bottom: 120px !important;
 }
 .content{
     display: flex;
@@ -803,6 +823,7 @@ img {
     position: relative;
     border-radius: 5px;
     margin-bottom: 10px;
+    box-shadow: 0 15px 40px #d2d3e2a1;
 }
 .new-badge span{
     font-size: 15px;
@@ -825,7 +846,10 @@ img {
     right: -20px;
     width: calc(100% + 40%px);
 }
-
+.inner{
+    position: relative;
+    z-index: 1;
+}
 .inner h1{
     font-size: 40px;
     margin: 30px 0;
@@ -836,6 +860,8 @@ img {
     padding-right: 20%;
     margin-bottom: 40px;
 }
+
+
 .slider-btn{
     width: fit-content;
     padding: 10px 20px;
@@ -906,6 +932,161 @@ img {
     transition-delay: 0.225s;
     color: white;
 }
+
+.shape-warpper{
+    z-index: 2;
+    left: -40px;
+}
 .shape-warpper img{
     max-width: 534px;
+    z-index: -1;
+}
+
+.card-slide{
+    overflow: hidden;
+    padding: 30px;
+    border-radius: 6px;
+    background: #fff;
+    max-width: 390px;
+    height: 100%;
+    color: var(--tx1);
+    box-shadow: 0px 6px 34px rgba(215, 216, 222, 0.41);
+}
+.card-img{
+    position: relative;
+}
+.card-img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.card-saleoff{
+    position: absolute;
+    bottom: 23px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background: transparent !important;
+}
+.card-saleoff::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(https://rainbowit.net/html/histudy/assets/images/icons/offer-badge-bg-color.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.card-saleoff span{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 12px;
+}
+.card-body{
+    padding-top: 30px;
+}
+.card-meta li{
+    font-size: 14px;
+    color: var(--tx1);
+    display: inline-block;
+    margin: 7px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 0;
+}
+.card-meta li i{
+    margin-right: 5px;
+}
+.card-title{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.card-text{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.card-rating{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.card-rating .rating{
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+}
+.card-rating .rating i{
+    color: #FF9747;
+    font-size: 13px;
+}
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.card-price{
+    display: flex;
+    align-items: center;
+}
+.card-price .current-price{
+    font-size: 24px;
+    font-weight: 700;
+}
+.card-price .off-price{
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: line-through;
+    opacity: 0.4;
+    margin-left: 7px;
+}
+.card-link{
+    display: flex;
+    font-weight: 500;
+    position: relative;
+    align-items: center;
+    font-size: 14px;
+}
+.card-link i{
+    top: 1px;
+    padding-left: 4px;
+}
+
+.swiper {
+    max-width: 390px;
+    height: 100%;
+  }
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+.mySwiper.swiper-3d .swiper-slide-shadow {
+    background: #fff;
+}
+.mySwiper.swiper-cards .swiper-slide{
+    overflow: visible;
+}
+.mySwiper .swiper-pagination-bullets.swiper-pagination-horizontal{
+    top: auto;
+    bottom: -35px;
 }
