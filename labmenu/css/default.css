@@ -28,7 +28,7 @@ body {
 }
 
 .border {
-    border: 1px solid var(--black);
+    border: 0px solid var(--black);
 }
 
 textarea:focus,
