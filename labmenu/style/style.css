@@ -18,7 +18,7 @@ img {
 }
 .all-header-bot{
     width: 100%;
-    position: fixed;
+    position: relative;
     align-items: center;
     justify-items: center;
     display: flex;
